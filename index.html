@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psychology Test: Determinism vs. Free Will</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="main-screen" class="main-screen">
+            <h1>מבחן פסיכולוגיה: דטרמיניזם מול רצון חופשי</h1>
+            <button onclick="startQuiz()">התחל חידון</button>
+        </div>
+        <div class="section" id="determinism">
+            <h2>דטרמיניזם</h2>
+            <img src="/img/Billiard-balls-56a714f25f9b58b7d0e6a09e.jpg" alt="Determinism Image">
+            <p>דטרמיניזם הוא ההשקפה הפילוסופית לפיה כל האירועים נקבעים לחלוטין על ידי סיבות קיימות בעבר. זה מרמז שלבני אדם אין רצון חופשי ושפעולותיהם נקבעו מראש על ידי כוחות חיצוניים או פנימיים.</p>
+        </div>
+        <div class="section" id="free-will">
+            <h2>רצון חופשי</h2>
+            <img src="/img/determinisme.png" alt="Free Will Image">
+            <p>רצון חופשי הוא התפיסה שלבני אדם יש את היכולת לעשות בחירות שאינן נקבעות על ידי סיבות קודמות או על ידי התערבות אלוהית. זה מצביע על כך שליחידים יש את הכוח לעצב את גורלם.</p>
+        </div>
+        <div class="buttons">
+            <button onclick="showDeterminism()">הראה דטרמיניזם</button>
+            <button onclick="showFreeWill()">הצג רצון חופשי</button>
+        </div>
+        <div class="section" id="questionnaire">
+            <h2>שְׁאֵלוֹן</h2>
+            <form id="quizForm">
+                <div class="question">
+                    <p>1. האם אתה מאמין שההחלטות שלך מושפעות יותר מ:</p>
+                    <label>
+                        <input type="radio" name="question1" value="determinism"> גורמים חיצוניים ואירועים קודמים
+                    </label><br>
+                    <label>
+                        <input type="radio" name="question1" value="free-will"> הבחירות והפעולות שלך
+                    </label>
+                </div>
+                <div class="question">
+                    <p>2. האם אתה חושב שהעתיד שלך נקבע מראש או מעוצב על ידי הבחירות שלך?</p>
+                    <label>
+                        <input type="radio" name="question2" value="determinism"> קָבוּעַ מִרֹאשׁ
+                    </label><br>
+                    <label>
+                        <input type="radio" name="question2" value="free-will"> עוצב על פי הבחירות שלי
+                    </label>
+                </div>
+                <div class="question">
+                    <p>3. האם אתה מרגיש שיש לך שליטה על תוצאות חייך?</p>
+                    <label>
+                        <input type="radio" name="question3" value="determinism"> לא, גורמים חיצוניים שולטים בזה
+                    </label><br>
+                    <label>
+                        <input type="radio" name="question3" value="free-will"> כן, אני שולט בזה
+                    </label>
+                </div>
+                <button type="button" onclick="showResult()">שלח</button>
+            </form>
+        </div>
+        <div class="section" id="result">
+            <h2>תוֹצָאָה</h2>
+            <p id="resultText"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
